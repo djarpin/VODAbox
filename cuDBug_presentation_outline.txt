@@ -1,0 +1,13 @@
+Slides for VODAbox
+
+1) big data is like teenage sex
+2) incredible fragmentation of vendors
+3) new words for the same old thing (machine learning vs statistics, massively parallel sharded environment vs cluster, big data vs fast data vs smart data vs thick data, etc.)
+4) why analytics on the database (familiar, fast - bring the method to the data not the other way around, analytics typically requires structure even when done on unstructured data so a database isn't a bad spot)
+5) the point of this talk is to try to help people not feel so intimidated by analytics (give then an environment they're comfortable with to experiment)
+6) what will we cover (madlib, plr, and plpython)
+7) madlib example
+8) R intro
+9) plr example
+10) python intro
+11) plpython example
