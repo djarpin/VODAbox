@@ -1,9 +1,0 @@
-# create a Vagrantfile which has parameters for vagrant box
-vagrant init
-
-# add box from the web
-vagrant box add db_sandbox http://lyte.id.au/vagrant/sl6-64-lyte.box
-
-# start the box
-vagrant up
-vagrant ssh
