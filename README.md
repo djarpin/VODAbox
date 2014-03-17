@@ -19,7 +19,7 @@ Installation
 9. Use something like PuTTY (http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) to log into your virtual machine with the ssh information given by the above
 10. Within PuTTY "cd" to /vagrant and run "./finish_install.sh"
 11. Start Postgres with the command "sudo service postgresql-9.2 start"
-12. Run codes in examples using the commands "psql -d maddb *sql_filename*"
+12. Run codes in examples using the command "psql -d maddb -f *sql_filename*"
 
 Overview
 --------
