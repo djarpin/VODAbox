@@ -3,7 +3,7 @@ VODAbox
 
 Vagrant On-Database Analytics Sandbox
 
-VODAbox combines PostgreSQL, PL/Python, PL/R, and MADlib to allow for extremely easy experimentation with on-database analytics.
+VODAbox combines a Scientific Linux virtual machine with PostgreSQL, PL/Python, PL/R, and MADlib to allow for extremely easy experimentation with on-database analytics.
 
 Installation
 ------------
