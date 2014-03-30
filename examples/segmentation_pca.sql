@@ -23,3 +23,8 @@ select madlib.pca_sparse_project('segmentation',
                                  'log_sales',
                                  5581,
                                  102);
+
+-- Look at top rows of projection
+select *
+from segmentation_proj
+limit 10;

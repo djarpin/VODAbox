@@ -19,6 +19,11 @@ from segmentation_proj s,
       from segmentation_centroid) c
 order by row_id;
 
+-- Look at clustered customers
+select *
+from segmentation_cluster
+limit 1000;
+
 -- Look for differences in clusters
 drop table if exists segmentation_summary;
 create table segmentation_summary as

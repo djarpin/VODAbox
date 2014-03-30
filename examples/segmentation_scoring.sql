@@ -52,7 +52,7 @@ from madlib.rf_train('infogain',
 drop table if exists segmentation_pred;
 select *
 from madlib.rf_classify('segmentation_rf',
-                        'segmentation_train',
+                        'segmentation_score',
                         'segmentation_pred');
 
 -- Check out sample
