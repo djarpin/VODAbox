@@ -23,4 +23,4 @@ Installation
 
 Overview
 --------
-<A [presentation](https://docs.google.com/presentation/d/1e_AvTlDNRRE7_-gPVaJ7R2zJomSF1IHkzTa3gQ1ReYU/pub?start=false&loop=false&delayms=3000) on VODAbox given at the Champaign Urbana Database User Group.>
+A [presentation](https://docs.google.com/presentation/d/1e_AvTlDNRRE7_-gPVaJ7R2zJomSF1IHkzTa3gQ1ReYU/pub?start=false&loop=false&delayms=3000) on VODAbox given at the Champaign Urbana Database User Group on April 3rd, 2014.
