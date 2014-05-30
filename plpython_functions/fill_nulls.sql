@@ -3,7 +3,7 @@
 -- Takes in the following arguments...
 --     null_table: schema.tablename for input table
 --     fill_table: schema.tablename for output table
---     fill_value: what value should replace nulls (defaults to 0)
+--     (optional) fill_value: what value should replace nulls (defaults to 0)
 create or replace function fill_nulls(null_table text, fill_table text, fill_value text default '0')
 returns text as
 $$
