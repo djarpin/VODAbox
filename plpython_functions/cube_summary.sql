@@ -4,6 +4,7 @@
 --     input_table: schema.tablename for table to summarize
 --     cube_table: schema.tablename for output table
 --     by_columns: comma-separated list of columns to summarize by
+--                 note that these columns will be converted to text so they can be unioned together with nulls
 --     cube_function: SQL aggregation function which can be used as a group by (in SQL syntax) e.g.
 --                    "avg(sales) as avg_sales"
 --                    "count(distinct user) as users, sum(sales) as total_sales"
@@ -29,7 +30,7 @@ for comb in comb_list:
         for b in by_list:
             if b in c:
                 group_by_list.append(b)
-                execute_str = execute_str + b + ', '
+                execute_str = execute_str + 'cast(' + b + ' as text) as ' + b + ', '
             else:
                 execute_str = execute_str + 'null as ' + b + ', '
         execute_str = execute_str + cube_function + ' from ' + input_table + ' group by '
@@ -40,7 +41,7 @@ for comb in comb_list:
 # Summary without any by variables
 for b in by_list:
     execute_str = execute_str + 'null as ' + b + ', '
-execute_str = execute_str + function_str + ' from ' + input_table + ';'
+execute_str = execute_str + cube_function + ' from ' + input_table + ';'
 
 # Execute SQL and return the SQL string
 plpy.execute(execute_str)
