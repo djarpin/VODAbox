@@ -25,10 +25,10 @@ for col_dict in col_list:
     for col_d in col_dict:
         col = col_dict[col_d]
         if first_col:
-            execute_str = execute_str + 'coalesce(' + col + ', ' + fill_value + ') as ' + col
+            execute_str = execute_str + 'coalesce(' + col + ", '" + fill_value + "') as " + col
             first_col = False
         else:
-            execute_str = execute_str + ', coalesce(' + col + ', ' + fill_value + ') as ' + col
+            execute_str = execute_str + ', coalesce(' + col + ", '" + fill_value + "') as " + col
 execute_str = execute_str + ' from ' + null_table + ';'
 
 # Execute SQL and return the code executed for comparison
